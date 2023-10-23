@@ -1,26 +1,15 @@
-import React from "react";
-
-import AboutUs from "./AboutUs";
-import Booking from "./Booking";
-import Footer from "./Footer";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Header from './header';
+import AboutUs from './aboutUs';
+import Footer from './footer';
 
 function Homepage() {
   return (
-    <div>
+    <div className="homepage-container">
       <Header />
-      <nav>
-        <ul>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li>
-            <Link to="/booking">Booking</Link>
-          </li>
-        </ul>
-      </nav>
-      <AboutUs />
-      <Booking />
+      <main>
+        <AboutUs />
+      </main>
       <Footer />
     </div>
   );

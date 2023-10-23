@@ -86,6 +86,7 @@ function Booking (){
                     <ul>
                         {bookingList.map((booking, index) =>(
                             <li key={index}>
+                                
                                 {'Student Name:${booking.studentName}, Admission Number: ${booking.admissionNumber},School: ${booking.school},Destination: ${booking.destination},Date of Travel: ${booking.dateOfTravel}'}
                             </li>
                         ))}
